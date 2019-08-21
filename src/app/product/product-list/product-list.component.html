@@ -32,12 +32,12 @@
           </thead>
           <tbody>
             <tr *ngFor= 'let product of filteredProducts'>
-                <!-- 
+                
                  <td>
-                  <a [routerLink] ="['/products', product.productId]">
+                  <a [routerLink] ="['/product', product.productId]">
                     {{product.productName }}
                   </a>
-                </td>  -->
+                </td> 
                 <td>
                     <img *ngIf='showImage'
                         [src]='product.imageUrl'
